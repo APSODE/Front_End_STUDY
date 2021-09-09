@@ -3,6 +3,7 @@
     <head>
         <meta charset = "utf-8">
         <link rel="stylesheet" href="C:\Users\leegu\Desktop\JS\FIRST_CSS.css">
+        
         <title>Hello World</title>
         <style>h1 {
             color: aqua;
@@ -24,6 +25,17 @@
             <h3>
                 <button>I'm h4 - h3 - button element</button>
             </h3>
+            <p>Player 1: Chris</p>
+            <script>
+                const PTAG = document.querySelector("p")
+
+                PTAG.addEventListener("click", UPDATE_NAME)
+
+                function UPDATE_NAME() {
+                    let NAME = prompt("ENTER A NEW NAME!")
+                    PTAG.textContent = "Player 1: " + NAME
+                }
+            </script>
         </h4>
     </body>
 </html>

@@ -8,16 +8,28 @@
     <body>
         <form id = "login-form">
             <input 
+            class = "ID_SPACE"
+            id = "ID_SPACE"
             required 
             maxlength = "15" 
             type="text" 
-            placeholder = "What is your name?"/>
+            name = "ID"
+            placeholder = "What is your ID?"/>
             <input 
+            class = "PW_SPACE"
+            id = "PW_SPACE"
+            required 
+            maxlength = "15" 
+            type="text" 
+            name = "PASSWORD"
+            placeholder = "What is your PASSWORD?"/>
+            <input 
+            class = "Login-Button"
             type = "submit" 
             value = "Log In"
             />
         </form>
-        <a href="https://www.naver.com">Go to NAVER</a>
+        <!-- <a href="https://www.naver.com">Go to NAVER</a> -->
         <h1 id = "greeting" class = "hidden"></h1>
         <script src = ".\app.js"></script>
         </html>
